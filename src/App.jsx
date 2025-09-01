@@ -1,6 +1,6 @@
 import React from 'react'
 import "./App.css";
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router';
 import Layout from './layouts/Layout';
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
@@ -10,7 +10,7 @@ import PortfolioScreen from './screens/PortfolioScreen';
 
 const App = () => {
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
+    <HashRouter basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
       <Routes>
         <Route path='/' Component={Layout}>
           <Route index Component={HomeScreen}></Route>
@@ -20,7 +20,7 @@ const App = () => {
           <Route path='contact' Component={ContactScreen}></Route>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
