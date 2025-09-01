@@ -18,7 +18,7 @@ const PortfolioScreen = () => {
                                 onClick={() => setSelected(portfolio)}
                             >
                                 <div className='aspect-video bg-white'>
-                                    <img src={portfolio.image} alt="" className='aspect-video object-cover object-top' loading='lazy' />
+                                    <img src={`${import.meta.env.BASE_URL}${portfolio.image}`} alt="" className='aspect-video object-cover object-top' loading='lazy' />
                                 </div>
                                 <div className='p-5'>
                                     <div className='flex gap-1 flex-wrap text-xs lg:text-base'>
@@ -50,7 +50,7 @@ const PortfolioScreen = () => {
                         </button>
                         <div className="items-center">
                             <div className="aspect-[3/2] bg-gray-100 rounded-t-lg">
-                                <img src={selected.image} alt="" className="aspect-[3/2] object-cover object-top w-full" />
+                                <img src={`${import.meta.env.BASE_URL}${selected.image}`} alt="" className="aspect-[3/2] object-cover object-top w-full" />
                             </div>
                             <div className="p-6 ">
                                 <div className="text-3xl font-bold mb-1 text-black">{selected.name}</div>

@@ -23,7 +23,7 @@ const HomeScreen = () => {
                 </div>
                 <div>
                     <div className='profile-pic'>
-                        <img src='/my.jpg' className='w-full aspect-[3/4] object-cover rounded object-top' />
+                        <img src={`${import.meta.env.BASE_URL}/my.jpg`} className='w-full aspect-[3/4] object-cover rounded object-top' />
                     </div>
                 </div>
             </section>
