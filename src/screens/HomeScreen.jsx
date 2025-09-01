@@ -11,18 +11,18 @@ const HomeScreen = () => {
                         I am passionate about building scalable and efficient web applications using modern technologies. With experience in both frontend and backend development, I enjoy solving complex problems and delivering high-quality solutions. Let's work together to bring your ideas to life!
                     </p>
                     <div className='grid grid-cols-2 gap-5'>
-                        <div className='flex gap-5 items-center text-center text-white  '>
+                        <div className='flex lg:flex-row flex-col gap-5 items-center text-center text-white  '>
                             <div className='text-6xl font-bold text-yellow-400'>12+</div>
                             <div className='text-xl'>Years of Experience</div>
                         </div>
-                        <div className='flex gap-5 items-center text-center text-white '>
+                        <div className='flex lg:flex-row flex-col gap-5 items-center text-center text-white '>
                             <div className='text-6xl font-bold text-yellow-400'>100+</div>
                             <div className='text-xl'>Projects Completed</div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div className='profile-pic'>
+                    <div className='profile-pic my-10'>
                         <img src={`${import.meta.env.BASE_URL}/my.jpg`} className='w-full aspect-[3/4] object-cover rounded object-top' />
                     </div>
                 </div>
