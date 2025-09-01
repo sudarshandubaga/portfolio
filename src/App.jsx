@@ -10,7 +10,7 @@ import PortfolioScreen from './screens/PortfolioScreen';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
       <Routes>
         <Route path='/' Component={Layout}>
           <Route index Component={HomeScreen}></Route>
