@@ -16,7 +16,7 @@ const App = () => {
           <Route index Component={HomeScreen}></Route>
           <Route path='about' Component={AboutScreen}></Route>
           <Route path='skills' Component={SkillScreen}></Route>
-          <Route path='portfolio' Component={PortfolioScreen}></Route>
+          <Route path='projects' Component={PortfolioScreen}></Route>
           <Route path='contact' Component={ContactScreen}></Route>
         </Route>
       </Routes>

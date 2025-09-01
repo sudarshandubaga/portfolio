@@ -13,7 +13,7 @@ const Layout = () => {
                         <NavLink to={"/about"}>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/portfolio">Portfolios</NavLink>
+                        <NavLink to="/projects">Portfolios</NavLink>
                     </li>
                     <li>
                         <NavLink to="/skills">Skills</NavLink>
