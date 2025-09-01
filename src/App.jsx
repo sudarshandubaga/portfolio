@@ -10,7 +10,7 @@ import PortfolioScreen from './screens/PortfolioScreen';
 
 const App = () => {
   return (
-    <HashRouter basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
+    <HashRouter>
       <Routes>
         <Route path='/' Component={Layout}>
           <Route index Component={HomeScreen}></Route>
